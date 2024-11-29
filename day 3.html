@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">Pagina inicial</a>
+    <script>
+        const perguntaArea = prompt("Qual área deseja seguir, Front-End ou Back-End?");
+         let linguagemArea = "";
+         if (perguntaArea === "Front-End"){
+             linguagemArea = prompt("Deseja aprender React ou Vue?")
+         }
+         else if (perguntaArea === "Back-End"){
+             linguagemArea = prompt("Deseja aprender C# ou Java?")
+         }
+         else{
+             alert("Você inseriu uma área invalida!")
+         }
+
+         const fullOuEsp = prompt("Deseja se especilizar na área escolhida(1) ou seguir para o desenvolvimento Full-Stack(2?)");
+         if(fullOuEsp == "1") {
+         alert("Continue estudando para dominar essa linguagem!");
+         }
+         else if(fullOuEsp == "2"){
+             alert("Conheça novas linguagens para se tornar Full-Stack!");
+         }
+         else{
+             alert("Você inseriu um valor invalido!");
+        }
+
+         let msgTec = prompt("Tem mais alguma tecnologia que você gostaria de aprender? Digite 'ok' caso positivo.");
+
+         while (msgTec === "ok"){
+             let novaTec = prompt("Digite a tecnologia que deseja aprender.");
+             msgTec = alert("Essa linguagem é muito interessante!");
+             msgTec = prompt("Tem mais alguma tecnologia que você gostaria de aprender? Digite 'ok' caso positivo.");
+          }
+    </script>
+</body>
+</html>
