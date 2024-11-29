@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">Pagina inicial</a>
+    <script>
+         let numCerto = 7 //parseInt(Math.random() * (10 - 0 + 1) + 0)
+        let tentativa = 0
+        const msgNum = 0
+
+         
+        do{
+        const msgNum = prompt("Tente acertar um valor que estou pensando, entre os números 0 a 10")
+         if(msgNum == numCerto){
+         const msgCerta = alert("Você acertou o número!")
+         break;
+         }
+         else{
+         tentativa++
+         alert("Você errou o número")
+         }
+         }
+         while(tentativa < 3)
+         alert(`O número correto era ${numCerto}`)
+    </script>
+</body>
+</html>
