@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <a href="index.html">Pagina inicial</a>
+    <script>
+        function calcularSoma() {
+
+let n1 = +prompt('Digite o primeiro número');
+let n2 = +prompt('Digite o segundo número');
+
+var resultado = n1 + n2;
+
+alert(`O resultado da soma é: ${resultado}`);
+}
+
+function calcularSubtracao() {
+
+let n1 = +prompt('Digite o primeiro número');
+let n2 = +prompt('Digite o segundo número');
+
+var resultado = n1 - n2;
+
+alert(`O resultado da subtração é: ${resultado}`);
+}
+
+function calcularMultiplicacao() {
+
+let n1 = +prompt('Digite o primeiro número');
+let n2 = +prompt('Digite o segundo número');
+
+var resultado = n1 * n2
+
+alert(`O resultado da multiplicação é: ${resultado}`);
+}
+
+function calcularDivisao() {
+
+let n1 = +prompt('Digite o primeiro número');
+let n2 = +prompt('Digite o segundo número');
+
+var resultado = n1 / n2;
+
+alert(`O resultado da divisão é: ${resultado}`);
+}
+
+function calculadora() {
+
+let operacao;
+
+while (operacao !== 'Sair') {
+
+    operacao = prompt('Qual operação deseja realizar? (Soma/Subtração/Multiplicação/Divisão/Sair)');
+
+    switch (operacao) {
+
+        case 'Soma':
+            calcularSoma();
+            break;
+
+        case 'Subtração':
+            calcularSubtracao();
+            break;
+
+        case 'Multiplicação':
+            calcularMultiplicacao();
+            break;
+
+        case 'Divisão':
+            calcularDivisao();
+
+           break;
+
+        case 'Sair':
+            alert('Até a próxima!');
+            break;
+
+        default:
+            alert('Operação inválida.');
+            break;
+
+    }
+
+}
+
+}
+
+calculadora();
+
+    </script>
+</body>
+</html>
