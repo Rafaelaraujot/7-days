@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">Pagina inicial</a>
+    <script>
+             let frutas = [];
+             let doces = [];
+             let congelados = [];
+             let laticinios = [];
+             let comida = "";
+             let categoria = "";
+             let remover = "";
+
+             let msgItem = "Sim";
+
+             while(msgItem != "Não"){
+                 msgItem = prompt("Deseja adicionar uma comida na sua lista de compras?(Sim)(Não)");
+                 while (msgItem != "Sim" && msgItem != "Não") {
+                 alert(`Operação invalida!`);
+                 msgItem = prompt("Deseja adicionar uma comida na sua lista de compras?(Sim)(Não)");
+
+             }
+
+             if (msgItem === "Não"){
+                 break;
+             }
+
+             comida = prompt("Qual comida você deseja  inserir?");
+             categoria = prompt("Em qual categoria essa comida se encaixa?(frutas, laticínios, congelados, doces)");
+
+             if(categoria === 'frutas'){
+                 frutas.push(comida);
+             } else if (categoria === 'laticiníos'){
+                 laticinios.push(comida);
+             } else if (categoria === 'doces'){
+                 doces.push(comida);
+             } else if (categoria === 'congelados'){
+                 congelados.push(comida)
+             } else {
+                 alert("Categoria invalida!")
+             }
+         }
+
+             alert(`Lista de compras:\n Frutas: ${frutas}\n Doces: ${doces}\n Laticínios: ${laticinios}\n Congelados: ${congelados}`);
+    </script>
+</body>
+</html>
